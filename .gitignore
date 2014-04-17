@@ -12,6 +12,7 @@ deploy
 *.swp
 *.testsettings
 TestResults/*
+packages/*
 *.dbmdl
 Releases/2*
 *.pidb
@@ -31,7 +32,3 @@ MediumTrustApp
 nohup.out
 *App_Data*
 *.DotSettings.user
-DistributedServices.PanelManagement.EventProcessorService/servicelog.txt
-DistributedServices.PanelManagement.EventProcessorService/trace.log
-*servicelog.txt
-*trace.log
