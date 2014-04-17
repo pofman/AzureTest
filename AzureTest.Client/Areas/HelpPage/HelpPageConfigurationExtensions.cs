@@ -8,7 +8,6 @@ using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Description;
 using AzureTest.Client.Areas.HelpPage.Models;
-using AzureTest.Client.Areas.HelpPage.SampleGeneration;
 
 namespace AzureTest.Client.Areas.HelpPage
 {

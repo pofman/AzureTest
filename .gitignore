@@ -1,6 +1,7 @@
 obj
 bin
 deploy
+csx
 *.csproj.user
 *.suo
 *.cache

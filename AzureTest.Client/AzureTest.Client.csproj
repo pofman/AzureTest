@@ -7,7 +7,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A7F099CF-C44B-48CA-B166-A007EC5C192E}</ProjectGuid>
+    <ProjectGuid>{4E433AC3-0F69-45E3-BED9-BDCF31DE9C5B}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -41,6 +41,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Data.Edm, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Data.Edm.5.6.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
@@ -63,9 +71,23 @@
     <Reference Include="Microsoft.WindowsAzure.Storage, Version=3.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\WindowsAzure.Storage.3.0.3.0\lib\net40\Microsoft.WindowsAzure.Storage.dll</HintPath>
     </Reference>
+    <Reference Include="Nails">
+      <HintPath>..\Libs\Nails.dll</HintPath>
+    </Reference>
+    <Reference Include="Nails.EntityFramework6">
+      <HintPath>..\Libs\Nails.EntityFramework6.dll</HintPath>
+    </Reference>
+    <Reference Include="Nails.Log4net">
+      <HintPath>..\Libs\Nails.Log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Nails.Mvc4">
+      <HintPath>..\Libs\Nails.Mvc4.dll</HintPath>
+    </Reference>
+    <Reference Include="Nails.Unity2">
+      <HintPath>..\Libs\Nails.Unity2.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Data.Services.Client" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Spatial, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -212,7 +234,20 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\AzureTest.Foundations\AzureTest.Foundations.csproj">
+      <Project>{BEE032B1-B21B-4944-9D6A-717803494EA4}</Project>
+      <Name>AzureTest.Foundations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AzureTest.Model\AzureTest.Model.csproj">
+      <Project>{445994CD-8845-4F92-A543-C4BDDA84E262}</Project>
+      <Name>AzureTest.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AzureTest.Persistence\AzureTest.Persistence.csproj">
+      <Project>{DF6B84C9-6DBB-41CC-BC0A-081FC0E93238}</Project>
+      <Name>AzureTest.Persistence</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -236,7 +271,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>10398</DevelopmentServerPort>
+          <DevelopmentServerPort>11558</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:10398/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

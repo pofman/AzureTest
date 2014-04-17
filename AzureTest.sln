@@ -5,14 +5,22 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "AzureTest.API", "AzureTest.API\AzureTest.API.ccproj", "{6ACBFD4A-2218-440D-8794-791383C0B3C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureTest.Client", "AzureTest.Client\AzureTest.Client.csproj", "{A7F099CF-C44B-48CA-B166-A007EC5C192E}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{6BC8C57A-08F2-4074-8D94-0775D024124A}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureTest.Model", "AzureTest.Model\AzureTest.Model.csproj", "{445994CD-8845-4F92-A543-C4BDDA84E262}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{99A54EB2-D0CD-4D48-8165-6D04EF0D780E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureTest.Foundations", "AzureTest.Foundations\AzureTest.Foundations.csproj", "{BEE032B1-B21B-4944-9D6A-717803494EA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureTest.Persistence", "AzureTest.Persistence\AzureTest.Persistence.csproj", "{DF6B84C9-6DBB-41CC-BC0A-081FC0E93238}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureTest.Client", "AzureTest.Client\AzureTest.Client.csproj", "{4E433AC3-0F69-45E3-BED9-BDCF31DE9C5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,12 +32,30 @@ Global
 		{6ACBFD4A-2218-440D-8794-791383C0B3C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6ACBFD4A-2218-440D-8794-791383C0B3C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6ACBFD4A-2218-440D-8794-791383C0B3C7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A7F099CF-C44B-48CA-B166-A007EC5C192E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A7F099CF-C44B-48CA-B166-A007EC5C192E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A7F099CF-C44B-48CA-B166-A007EC5C192E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A7F099CF-C44B-48CA-B166-A007EC5C192E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{445994CD-8845-4F92-A543-C4BDDA84E262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{445994CD-8845-4F92-A543-C4BDDA84E262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{445994CD-8845-4F92-A543-C4BDDA84E262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{445994CD-8845-4F92-A543-C4BDDA84E262}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEE032B1-B21B-4944-9D6A-717803494EA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE032B1-B21B-4944-9D6A-717803494EA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE032B1-B21B-4944-9D6A-717803494EA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE032B1-B21B-4944-9D6A-717803494EA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF6B84C9-6DBB-41CC-BC0A-081FC0E93238}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF6B84C9-6DBB-41CC-BC0A-081FC0E93238}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF6B84C9-6DBB-41CC-BC0A-081FC0E93238}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF6B84C9-6DBB-41CC-BC0A-081FC0E93238}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E433AC3-0F69-45E3-BED9-BDCF31DE9C5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E433AC3-0F69-45E3-BED9-BDCF31DE9C5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E433AC3-0F69-45E3-BED9-BDCF31DE9C5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E433AC3-0F69-45E3-BED9-BDCF31DE9C5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{445994CD-8845-4F92-A543-C4BDDA84E262} = {99A54EB2-D0CD-4D48-8165-6D04EF0D780E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.0\lib\NET35;packages\Unity.Interception.2.1.505.0\lib\NET35
 	EndGlobalSection
 EndGlobal

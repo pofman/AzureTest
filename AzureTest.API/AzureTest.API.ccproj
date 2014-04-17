@@ -47,7 +47,7 @@
   <ItemGroup>
     <ProjectReference Include="..\AzureTest.Client\AzureTest.Client.csproj">
       <Name>AzureTest.Client</Name>
-      <Project>{a7f099cf-c44b-48ca-b166-a007ec5c192e}</Project>
+      <Project>{4e433ac3-0f69-45e3-bed9-bdcf31de9c5b}</Project>
       <Private>True</Private>
       <RoleType>Web</RoleType>
       <RoleName>AzureTest.Client</RoleName>

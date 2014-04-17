@@ -1,4 +1,4 @@
-namespace AzureTest.Client.Areas.HelpPage.SampleGeneration
+namespace AzureTest.Client.Areas.HelpPage
 {
     /// <summary>
     /// Indicates whether the sample is used for request or response

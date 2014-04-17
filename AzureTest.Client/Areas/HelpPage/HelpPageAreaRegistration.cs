@@ -1,6 +1,5 @@
 using System.Web.Http;
 using System.Web.Mvc;
-using AzureTest.Client.Areas.HelpPage.App_Start;
 
 namespace AzureTest.Client.Areas.HelpPage
 {
