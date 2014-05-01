@@ -7,6 +7,7 @@ namespace AzureTest.Persistence.Mappings
         public TeamEntityConfiguration()
         {
             Property(x => x.Name);
+            HasMany(x => x.Players).WithMany(x => x.Teams);
         }
     }
 }
