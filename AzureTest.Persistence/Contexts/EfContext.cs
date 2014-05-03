@@ -9,7 +9,7 @@ namespace AzureTest.Persistence.Contexts
         {
             Configuration.LazyLoadingEnabled = true;
             Configuration.ProxyCreationEnabled = true;
-            Database.SetInitializer<EfContext>(null);
+            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<EfContext>());
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

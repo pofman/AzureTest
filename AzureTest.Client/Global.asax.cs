@@ -6,6 +6,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using AzureTest.Client.Controllers;
 using AzureTest.Foundations;
 using AzureTest.Model;
 using AzureTest.Persistence.Contexts;
@@ -22,7 +23,7 @@ namespace AzureTest.Client
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-            GlobalConfiguration.Configure(WebApiConfig.Register);
+            WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
@@ -32,6 +33,7 @@ namespace AzureTest.Client
         {
             nails.InspectAssemblyOf<SystemDate>()
                 .InspectAssemblyOf<Player>()
+                .InspectAssemblyOf<HomeController>()
                 .IoC.Container<Unity>()
                 .Persistence.DataMapper<EntityFramework>(x => x.Configure<EfContext>())
                 .Logging.Logger<Log4net>()
