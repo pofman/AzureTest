@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureTest.Client", "AzureTe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureTest.W8.Client", "AzureTest.W8.Client\AzureTest.W8.Client.csproj", "{3606A662-2C5D-48CB-B844-49FC8D66C41F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureTest.WP8.Client", "AzureTest.WP8.Client\AzureTest.WP8.Client.csproj", "{596E6C1B-0EA9-4AD0-A6FB-212050D9014D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -110,6 +112,26 @@ Global
 		{3606A662-2C5D-48CB-B844-49FC8D66C41F}.Release|x86.ActiveCfg = Release|x86
 		{3606A662-2C5D-48CB-B844-49FC8D66C41F}.Release|x86.Build.0 = Release|x86
 		{3606A662-2C5D-48CB-B844-49FC8D66C41F}.Release|x86.Deploy.0 = Release|x86
+		{596E6C1B-0EA9-4AD0-A6FB-212050D9014D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{596E6C1B-0EA9-4AD0-A6FB-212050D9014D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{596E6C1B-0EA9-4AD0-A6FB-212050D9014D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{596E6C1B-0EA9-4AD0-A6FB-212050D9014D}.Debug|ARM.ActiveCfg = Debug|ARM
+		{596E6C1B-0EA9-4AD0-A6FB-212050D9014D}.Debug|ARM.Build.0 = Debug|ARM
+		{596E6C1B-0EA9-4AD0-A6FB-212050D9014D}.Debug|ARM.Deploy.0 = Debug|ARM
+		{596E6C1B-0EA9-4AD0-A6FB-212050D9014D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{596E6C1B-0EA9-4AD0-A6FB-212050D9014D}.Debug|x86.ActiveCfg = Debug|x86
+		{596E6C1B-0EA9-4AD0-A6FB-212050D9014D}.Debug|x86.Build.0 = Debug|x86
+		{596E6C1B-0EA9-4AD0-A6FB-212050D9014D}.Debug|x86.Deploy.0 = Debug|x86
+		{596E6C1B-0EA9-4AD0-A6FB-212050D9014D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{596E6C1B-0EA9-4AD0-A6FB-212050D9014D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{596E6C1B-0EA9-4AD0-A6FB-212050D9014D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{596E6C1B-0EA9-4AD0-A6FB-212050D9014D}.Release|ARM.ActiveCfg = Release|ARM
+		{596E6C1B-0EA9-4AD0-A6FB-212050D9014D}.Release|ARM.Build.0 = Release|ARM
+		{596E6C1B-0EA9-4AD0-A6FB-212050D9014D}.Release|ARM.Deploy.0 = Release|ARM
+		{596E6C1B-0EA9-4AD0-A6FB-212050D9014D}.Release|x64.ActiveCfg = Release|Any CPU
+		{596E6C1B-0EA9-4AD0-A6FB-212050D9014D}.Release|x86.ActiveCfg = Release|x86
+		{596E6C1B-0EA9-4AD0-A6FB-212050D9014D}.Release|x86.Build.0 = Release|x86
+		{596E6C1B-0EA9-4AD0-A6FB-212050D9014D}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
