@@ -181,6 +181,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -192,8 +193,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\PlayerDto.cs" />
-    <Compile Include="Models\TeamDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebRole.cs" />
   </ItemGroup>
@@ -240,6 +239,10 @@
     <ProjectReference Include="..\AzureTest.Persistence\AzureTest.Persistence.csproj">
       <Project>{DF6B84C9-6DBB-41CC-BC0A-081FC0E93238}</Project>
       <Name>AzureTest.Persistence</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AzureTest.Services.Contracts\AzureTest.Services.Contracts.csproj">
+      <Project>{98399E83-0EAA-40F0-B919-94349B263E1F}</Project>
+      <Name>AzureTest.Services.Contracts</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

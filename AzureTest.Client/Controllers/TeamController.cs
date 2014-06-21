@@ -1,16 +1,17 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
-using AzureTest.Client.Models;
 using AzureTest.Model;
 using AzureTest.Persistence.Queries;
+using AzureTest.Services.Contracts.Dtos;
+using AzureTest.Services.Contracts.Services;
 using NailsFramework.IoC;
 using NailsFramework.Persistence;
 using NailsFramework.UserInterface;
 
 namespace AzureTest.Client.Controllers
 {
-    public class TeamController : NailsApiController
+    public class TeamController : NailsApiController, ITeamsService
     {
         [Inject]
         public IBag<Team> Teams { private get; set; }

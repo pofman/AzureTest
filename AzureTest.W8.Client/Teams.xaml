@@ -46,6 +46,9 @@
             <TextBlock x:Name="pageTitle" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40" SelectionChanged="pageTitle_SelectionChanged" Text="Teams"/>
         </Grid>
-        <GridView x:Name="TeamsGrid" HorizontalAlignment="Left" Margin="42,41,0,0" Grid.Row="1" VerticalAlignment="Top" Width="1279" Height="292"/>
+        <Grid x:Name="TeamsGrid" HorizontalAlignment="Left" Height="453" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="1294">
+            
+        </Grid>
+
     </Grid>
 </common:BasePage>

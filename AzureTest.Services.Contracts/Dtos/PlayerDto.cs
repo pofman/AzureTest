@@ -1,4 +1,4 @@
-﻿namespace AzureTest.Client.Models
+﻿namespace AzureTest.Services.Contracts.Dtos
 {
     public class PlayerDto
     {
