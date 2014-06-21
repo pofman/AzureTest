@@ -1,4 +1,4 @@
-﻿<Page
+﻿<common:BasePage
     x:Name="pageRoot"
     x:Class="AzureTest.W8.Client.Teams"
     DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
@@ -43,8 +43,9 @@
                         AutomationProperties.Name="Back"
                         AutomationProperties.AutomationId="BackButton"
                         AutomationProperties.ItemType="Navigation Button"/>
-            <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
-                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40" SelectionChanged="pageTitle_SelectionChanged"/>
+            <TextBlock x:Name="pageTitle" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
+                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40" SelectionChanged="pageTitle_SelectionChanged" Text="Teams"/>
         </Grid>
+        <GridView x:Name="TeamsGrid" HorizontalAlignment="Left" Margin="42,41,0,0" Grid.Row="1" VerticalAlignment="Top" Width="1279" Height="292"/>
     </Grid>
-</Page>
+</common:BasePage>

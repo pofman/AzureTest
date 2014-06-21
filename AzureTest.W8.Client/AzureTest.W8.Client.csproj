@@ -119,6 +119,7 @@
     <Compile Include="Teams.xaml.cs">
       <DependentUpon>Teams.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Common\BasePage.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
