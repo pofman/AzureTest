@@ -25,7 +25,8 @@ namespace AzureTest.Client.Controllers
             return Teams.Select(x => new TeamDto
             {
                 Id = x.Id,
-                Name = x.Name
+                Name = x.Name,
+                Players = x.Players.Select(p => p.Id)
             });
         }
 

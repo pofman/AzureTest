@@ -41,6 +41,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AzureTest.Services.Contracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Bin\AzureTest.Services.Contracts.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
@@ -240,9 +244,9 @@
       <Project>{DF6B84C9-6DBB-41CC-BC0A-081FC0E93238}</Project>
       <Name>AzureTest.Persistence</Name>
     </ProjectReference>
-    <ProjectReference Include="..\AzureTest.Services.Contracts\AzureTest.Services.Contracts.csproj">
-      <Project>{98399E83-0EAA-40F0-B919-94349B263E1F}</Project>
-      <Name>AzureTest.Services.Contracts</Name>
+    <ProjectReference Include="..\AzureTest.Support\AzureTest.Support.csproj">
+      <Project>{80A658E6-3EA6-4589-8A24-ADDC0C7673AB}</Project>
+      <Name>AzureTest.Support</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

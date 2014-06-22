@@ -1,4 +1,4 @@
-﻿namespace AzureTest.Foundations.Services
+﻿namespace AzureTest.Support.Services
 {
     public interface IService
     {

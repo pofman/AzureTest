@@ -1,4 +1,5 @@
-﻿using AzureTest.W8.Client.Common;
+﻿using AzureTest.Services.Contracts.Services;
+using AzureTest.W8.Client.Common;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -15,6 +16,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234237
+using AzureTest.W8.Client.Common.Services;
 
 namespace AzureTest.W8.Client
 {
@@ -51,6 +53,7 @@ namespace AzureTest.W8.Client
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += navigationHelper_LoadState;
             this.navigationHelper.SaveState += navigationHelper_SaveState;
+            var result = new ServiceProxy<ITeamsService>().Invoke(x => x.Get());
         }
 
         /// <summary>
